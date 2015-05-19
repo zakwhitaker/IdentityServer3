@@ -3,7 +3,9 @@ using System.IdentityModel.Tokens;
 using Microsoft.Owin.Security;
 using Microsoft.Owin.Security.Cookies;
 using Owin;
+using Microsoft.Owin;
 
+[assembly: OwinStartup("ProductionConfiguration", typeof(WebApp1.Startup))]
 namespace WebApp1
 {
     public class Startup
